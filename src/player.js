@@ -37,7 +37,7 @@ export default {
     },
     update(){
         this.current_audio = this.audio_data[this.current_playing];
-        this.background.style.background = `rgba(0, 0, 0, 0.7) url('${this.current_audio.album_img}') no-repeat center center / cover`;
+        this.background.style.background = `linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('${this.current_audio.album_img}') no-repeat center center / cover`
         this.album_img.style.background = `url('${this.current_audio.album_img}') no-repeat center center / cover`;
         this.song_title.innerText = this.current_audio.song_title;
         this.artist.innerText = this.current_audio.artist;
